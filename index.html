@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Öz Döner in Potsdam – Frische Döner, Salate, Snacks und türkische Spezialitäten."
+    />
+    <title>Startseite | Öz Döner</title>
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header scrolled">
+      <div class="container header-inner">
+        <a href="#start" class="logo">
+          <img class="logo-mark" src="images/logo.png" alt="Öz Döner" width="40" height="40" />
+          <span>Öz Döner</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Menü öffnen"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav-links" aria-label="Hauptnavigation">
+          <a href="#start">Startseite</a>
+          <a href="#speisekarte">Speisekarte</a>
+          <a href="#ueber-uns">Über uns</a>
+          <a href="#kontakt">Kontakt</a>
+          <a class="btn btn-primary btn-order-mobile" href="#kontakt">Route planen</a>
+        </nav>
+
+        <a class="btn btn-primary header-cta-desktop" href="#kontakt">
+          Route planen
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+          </svg>
+        </a>
+      </div>
+    </header>
+    <div class="nav-backdrop" hidden aria-hidden="true"></div>
+
+    <main>
+      <section class="hero" id="start">
+        <div class="hero-bg" role="img" aria-label="Öz Döner"></div>
+        <div class="container hero-content">
+          <span class="hero-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+            </svg>
+            Potsdam
+          </span>
+          <h1>Willkommen <span class="accent">Öz Döner</span></h1>
+          <p class="hero-text">
+            Frisch zubereitete Döner, knackige Salate, leckere Snacks und traditionelle
+            türkische Gerichte – jeden Tag für Sie da.
+          </p>
+          <div class="hero-actions">
+            <a href="#speisekarte" class="btn btn-primary">Speisekarte ansehen</a>
+            <a class="btn btn-outline" href="#kontakt">Kontakt &amp; Adresse</a>
+          </div>
+          <div class="hero-meta">
+            <span class="hero-meta-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              Mo–So: 10:00 – 21:30 Uhr
+            </span>
+            <span class="hero-meta-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Johan-Bouman-Platz, 14469 Potsdam
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="speisekarte">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-label">Unsere Speisekarte</span>
+            <h2 class="section-title">Frisch &amp; Lecker</h2>
+            <p class="section-subtitle">
+              Entdecken Sie unsere vielfältige Auswahl an frisch zubereiteten Gerichten.
+              Alle Preise entsprechen unserer aktuellen Karte.
+            </p>
+          </header>
+
+          <div class="menu-nav-wrap">
+            <nav class="menu-nav" id="menu-nav" aria-label="Speisekarten-Kategorien"></nav>
+          </div>
+
+          <div class="menu-panel" id="menu-panel">
+            <div class="menu-panel-visual">
+              <img
+                id="menu-category-image"
+                src="images/backplan.png"
+                alt="Menükategorie"
+                width="600"
+                height="450"
+              />
+            </div>
+            <div class="menu-panel-content">
+              <h3 class="menu-category-title" id="menu-category-title">Menüs</h3>
+              <ul class="menu-list" id="menu-category-list"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="ueber-uns">
+        <div class="container about-grid">
+          <div class="about-text">
+            <span class="section-label">Über uns</span>
+            <h2 class="section-title">Willkommen bei Öz Döner</h2>
+            <p>
+              Bei Öz Döner servieren wir Ihnen täglich frische und authentische Gerichte.
+              Qualität, Geschmack und freundlicher Service stehen bei uns im Mittelpunkt.
+            </p>
+            <p>
+              Ob Döner, Dürüm, Tellergerichte, Salate oder Snacks – wir bereiten alles
+              frisch für Sie zu. Vor Ort genießen oder abholen.
+            </p>
+            <div class="features-grid">
+              <div class="feature-card">
+                <div class="feature-icon" aria-hidden="true">🔥</div>
+                <h4>Frisch zubereitet</h4>
+                <p>Unsere Speisen werden jeden Tag frisch vorbereitet.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon" aria-hidden="true">🥬</div>
+                <h4>Frische Zutaten</h4>
+                <p>Knackige Salate und hochwertige Zutaten für besten Geschmack.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon" aria-hidden="true">❤️</div>
+                <h4>Mit Liebe gemacht</h4>
+                <p>Traditionelle Rezepte, modern serviert.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon" aria-hidden="true">⚡</div>
+                <h4>Schneller Service</h4>
+                <p>Ihre Bestellung ist zügig und frisch bereit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-gallery about-gallery-duo">
+            <img src="images/backplan.png" alt="Öz Döner Restaurant" loading="lazy" width="800" height="450" />
+            <img src="images/doner/doner.png" alt="Öz Döner Spezialitäten" loading="lazy" width="800" height="450" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="kontakt">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-label">Kontakt</span>
+            <h2 class="section-title">Besuchen Sie uns</h2>
+            <p class="section-subtitle">
+              Wir freuen uns auf Ihren Besuch bei Öz Döner in Potsdam.
+            </p>
+          </header>
+
+          <div class="contact-grid">
+            <div class="map-wrap">
+              <iframe
+                title="Standort Öz Döner auf Google Maps"
+                src="https://www.google.com/maps?q=Johan-Bouman-Platz,+14469+Potsdam&output=embed"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            <div class="contact-cards">
+              <div class="contact-card">
+                <div class="contact-card-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Adresse</h4>
+                  <p>Johan-Bouman-Platz<br />14469 Potsdam</p>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-card-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Öffnungszeiten</h4>
+                  <p>Mo–So: 10:00 – 21:30 Uhr</p>
+                </div>
+              </div>
+
+              <div class="contact-actions">
+                <a
+                  class="btn btn-dark"
+                  href="https://www.google.com/maps/dir/?api=1&destination=Johan-Bouman-Platz,+14469+Potsdam"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Route planen
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#start" class="logo">
+              <img class="logo-mark" src="images/logo.png" alt="Öz Döner" width="40" height="40" />
+              <span>Öz Döner</span>
+            </a>
+            <p>
+              Frisch zubereitete Döner und türkische Spezialitäten in Potsdam.
+              Jeden Tag geöffnet.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Schnellzugriff</h4>
+            <ul>
+              <li><a href="#speisekarte">Speisekarte</a></li>
+              <li><a href="#ueber-uns">Über uns</a></li>
+              <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Kontakt</h4>
+            <ul>
+              <li>Johan-Bouman-Platz</li>
+              <li>14469 Potsdam</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Öz Döner — Alle Rechte vorbehalten.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/site-base.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
