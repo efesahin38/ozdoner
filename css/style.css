@@ -40,6 +40,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 body.nav-open {
   overflow: hidden;
 }
